@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tensara Medical</title>
+  <meta name="description" content="Tensara Medical is developing next-generation soft-tissue support for reconstructive surgery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="logo">Tensara<span>Medical</span></a>
+      <nav>
+        <a href="#problem">Problem</a>
+        <a href="#technology">Technology</a>
+        <a href="#team">Team</a>
+        <a href="#contact" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Reconstructive surgery</p>
+        <h1>Better support for soft-tissue reconstruction.</h1>
+        <p class="lead">
+          [One or two sentences on what Tensara does — e.g. "Tensara Medical is developing an
+          electrospun soft-tissue scaffold designed to improve outcomes in breast reconstruction."]
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Get in touch</a>
+          <a href="#technology" class="btn btn-ghost">Our technology</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section id="problem" class="section">
+      <div class="container">
+        <p class="eyebrow">The problem</p>
+        <h2>[Headline describing the clinical need]</h2>
+        <div class="grid-3">
+          <div class="stat">
+            <span class="stat-num">[###K]</span>
+            <span class="stat-label">[procedures per year in the U.S.]</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">[##%]</span>
+            <span class="stat-label">[complication / revision rate with current options]</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">[$###M]</span>
+            <span class="stat-label">[addressable market]</span>
+          </div>
+        </div>
+        <p class="note">Sources: [cite each figure].</p>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section id="technology" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">Our approach</p>
+        <h2>[Headline describing the solution]</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>[Benefit one]</h3>
+            <p>[Short explanation, written for a surgeon.]</p>
+          </article>
+          <article class="card">
+            <h3>[Benefit two]</h3>
+            <p>[Short explanation.]</p>
+          </article>
+          <article class="card">
+            <h3>[Benefit three]</h3>
+            <p>[Short explanation.]</p>
+          </article>
+        </div>
+        <p class="note">
+          Tensara's product is in development and is not available for sale.
+          It has not been cleared or approved by the U.S. FDA.
+        </p>
+      </div>
+    </section>
+
+    <!-- AUDIENCES -->
+    <section class="section">
+      <div class="container grid-2">
+        <div class="panel">
+          <p class="eyebrow">For surgeons</p>
+          <h3>Partner with us on clinical development</h3>
+          <p>[What you're looking for from clinicians — advisors, feedback, future study sites.]</p>
+          <a href="#contact" class="link">Talk to our clinical team &rarr;</a>
+        </div>
+        <div class="panel">
+          <p class="eyebrow">For investors</p>
+          <h3>[Funding stage, e.g. "Raising our pre-seed round"]</h3>
+          <p>[One or two lines on milestones — e.g. regulatory pathway, prototype status.]</p>
+          <a href="#contact" class="link">Request our deck &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section section-alt">
+      <div class="container">
+        <p class="eyebrow">Team</p>
+        <h2>The people behind Tensara</h2>
+        <div class="grid-3">
+          <div class="person">
+            <div class="avatar" aria-hidden="true">AH</div>
+            <h3>Alan Harding</h3>
+            <p class="role">[Title]</p>
+            <p>[Short bio.]</p>
+          </div>
+          <div class="person">
+            <div class="avatar" aria-hidden="true">?</div>
+            <h3>[Name]</h3>
+            <p class="role">[Title]</p>
+            <p>[Short bio.]</p>
+          </div>
+          <div class="person">
+            <div class="avatar" aria-hidden="true">?</div>
+            <h3>[Name]</h3>
+            <p class="role">[Title]</p>
+            <p>[Short bio.]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Get in touch</h2>
+        <p class="lead">Surgeons, investors and partners — we'd love to hear from you.</p>
+        <a href="mailto:[contact@yourdomain.com]" class="btn">[contact@yourdomain.com]</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Tensara Medical, LLC. All rights reserved.</p>
+      <p class="small">Investigational device. Not available for sale in the United States.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
