@@ -3,42 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tensara Medical</title>
-  <meta name="description" content="Tensara Medical is developing next-generation soft-tissue support for reconstructive surgery.">
+  <title>Tensara Medical — Next-generation soft tissue repair</title>
+  <meta name="description" content="Tensara Medical is developing a resorbable nanofiber scaffold that guides the body to rebuild its own tissue, then dissolves. Next-generation soft tissue repair in women's health and beyond.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="#top" class="logo">Tensara<span>Medical</span></a>
-      <nav>
+      <a href="#top" class="logo" aria-label="Tensara Medical, home">Tensara<span>Medical</span></a>
+      <nav aria-label="Main">
         <a href="#problem">Problem</a>
         <a href="#technology">Technology</a>
+        <a href="#platform">Platform</a>
         <a href="#team">Team</a>
         <a href="#contact" class="btn btn-small">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main">
 
     <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Reconstructive surgery</p>
-        <h1>Better support for soft-tissue reconstruction.</h1>
-        <p class="lead">
-          [One or two sentences on what Tensara does — e.g. "Tensara Medical is developing an
-          electrospun soft-tissue scaffold designed to improve outcomes in breast reconstruction."]
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn">Get in touch</a>
-          <a href="#technology" class="btn btn-ghost">Our technology</a>
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Women's health · Soft tissue repair</p>
+          <h1>Next-generation soft tissue repair in women's health and beyond.</h1>
+          <p class="lead">
+            Tensara is developing a resorbable nanofiber scaffold that guides the body to rebuild
+            its own organized tissue, then dissolves, leaving no permanent mesh behind.
+          </p>
+          <div class="hero-actions">
+            <a href="#technology" class="btn">See how it works</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
         </div>
+        <figure class="hero-figure">
+          <img src="images/scaffold-lab.jpg" width="960" height="1280"
+               alt="A gloved hand peeling a thin white nanofiber scaffold sheet off a metal collector drum in the lab.">
+          <figcaption>Electrospun scaffold coming off the collector drum.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -46,92 +55,237 @@
     <section id="problem" class="section">
       <div class="container">
         <p class="eyebrow">The problem</p>
-        <h2>[Headline describing the clinical need]</h2>
+        <h2>Existing mesh struggles to meet the standard of care.</h2>
+        <p class="section-lead">
+          Surgeons repairing soft tissue today choose between permanent plastic, current resorbables
+          that don't guide healing, or a second surgery to harvest the patient's own tissue.
+        </p>
+
         <div class="grid-3">
+          <article class="card">
+            <h3>Permanent polypropylene mesh</h3>
+            <ul class="ticks ticks-neg">
+              <li>Permanent foreign material</li>
+              <li>Associated with chronic inflammation and erosion</li>
+              <li>Forms scar tissue rather than regenerating tissue</li>
+              <li>Under increased regulatory scrutiny</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Current bioresorbable mesh</h3>
+            <ul class="ticks ticks-neg">
+              <li>Macroporous and abrasive structure</li>
+              <li>Limited or no control over cell recruitment</li>
+              <li>Little control over how tissue regenerates</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Autologous fascia</h3>
+            <ul class="ticks ticks-neg">
+              <li>Requires a second surgical site</li>
+              <li>Donor-site morbidity</li>
+              <li>Longer recovery</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- TODO: add a citation for every figure below before publishing. -->
+        <div class="stats">
           <div class="stat">
-            <span class="stat-num">[###K]</span>
-            <span class="stat-label">[procedures per year in the U.S.]</span>
+            <span class="stat-num">300,000</span>
+            <span class="stat-label">suburethral slings placed each year for stress urinary incontinence</span>
           </div>
           <div class="stat">
-            <span class="stat-num">[##%]</span>
-            <span class="stat-label">[complication / revision rate with current options]</span>
+            <span class="stat-num">Up to 20%</span>
+            <span class="stat-label">clinical failure rate with current sling procedures</span>
           </div>
           <div class="stat">
-            <span class="stat-num">[$###M]</span>
-            <span class="stat-label">[addressable market]</span>
+            <span class="stat-num">$15.5B</span>
+            <span class="stat-label">U.S. soft tissue repair market</span>
           </div>
         </div>
-        <p class="note">Sources: [cite each figure].</p>
+        <p class="note">Sources: [add citations].</p>
       </div>
     </section>
 
     <!-- TECHNOLOGY -->
     <section id="technology" class="section section-alt">
       <div class="container">
-        <p class="eyebrow">Our approach</p>
-        <h2>[Headline describing the solution]</h2>
-        <div class="grid-3">
-          <article class="card">
-            <h3>[Benefit one]</h3>
-            <p>[Short explanation, written for a surgeon.]</p>
-          </article>
-          <article class="card">
-            <h3>[Benefit two]</h3>
-            <p>[Short explanation.]</p>
-          </article>
-          <article class="card">
-            <h3>[Benefit three]</h3>
-            <p>[Short explanation.]</p>
-          </article>
-        </div>
-        <p class="note">
-          Tensara's product is in development and is not available for sale.
-          It has not been cleared or approved by the U.S. FDA.
+        <p class="eyebrow">Our technology</p>
+        <h2>Scaffold-directed tissue architecture and function.</h2>
+        <p class="section-lead">
+          Tensara's engineered nanofibers are designed to direct and organize tissue regeneration so
+          the repaired tissue resembles the pre-trauma tissue: restoring native tissue, not replacing it.
         </p>
+
+        <ol class="steps">
+          <li class="step">
+            <img src="images/fiber-1.jpg" width="470" height="470" loading="lazy"
+                 alt="Scanning electron micrograph of randomly oriented electrospun nanofibers; 20 micrometer scale bar.">
+            <span class="step-num">1</span>
+            <h3>Electrospun nanofibers</h3>
+            <p>Coaxial nanofibers, around 500&nbsp;nm across, mimic the body's natural extracellular matrix.</p>
+          </li>
+          <li class="step">
+            <img src="images/fiber-2.jpg" width="466" height="466" loading="lazy"
+                 alt="Scanning electron micrograph of tightly aligned parallel nanofibers; 20 micrometer scale bar.">
+            <span class="step-num">2</span>
+            <h3>Controlled tissue architecture</h3>
+            <p>An elongated, aligned fiber structure guides cells to organize the way native tissue does.</p>
+          </li>
+          <li class="step">
+            <img src="images/fiber-3.jpg" width="470" height="470" loading="lazy"
+                 alt="Stained histology section showing elongated, aligned cells.">
+            <span class="step-num">3</span>
+            <h3>Resorbable &amp; regenerative</h3>
+            <p>The scaffold guides tissue ingrowth, then resorbs, leaving no permanent foreign body behind.</p>
+          </li>
+        </ol>
+
+        <div class="compare">
+          <h3>How Tensara is designed to compare</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Design goal</th>
+                  <th scope="col">Tensara</th>
+                  <th scope="col">Permanent synthetic mesh</th>
+                  <th scope="col">Autologous fascia</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Fully resorbable</th><td>Yes</td><td>No</td><td>n/a (own tissue)</td></tr>
+                <tr><th scope="row">Guides tissue regeneration</th><td>Designed to</td><td>No (scar tissue)</td><td>n/a</td></tr>
+                <tr><th scope="row">No second surgical site</th><td>Yes</td><td>Yes</td><td>No</td></tr>
+                <tr><th scope="row">No permanent foreign body</th><td>Yes</td><td>No</td><td>Yes</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">Head-to-head preclinical comparisons are planned. Tensara characteristics reflect design intent.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATFORM -->
+    <section id="platform" class="section">
+      <div class="container">
+        <p class="eyebrow">One platform, many tissues</p>
+        <h2>No two tissues are alike.</h2>
+        <p class="section-lead">
+          Tensara combines bioabsorbable materials with tunable fiber architecture, so the same
+          platform can be tailored to tissue injuries that current mesh underserves.
+        </p>
+
+        <div class="grid-2 platform">
+          <div class="panel panel-dark">
+            <p class="eyebrow eyebrow-light">Lead program</p>
+            <h3>Soft tissue repair</h3>
+            <p>
+              We are starting where the regulatory path is clearest and the clinical need is greatest,
+              including stress urinary incontinence (SUI), where the current standard of care is often
+              considered a last resort.
+            </p>
+          </div>
+          <div class="panel">
+            <p class="eyebrow">Next indications</p>
+            <ul class="chips">
+              <li>Pelvic floor</li>
+              <li>Breast reconstruction</li>
+              <li>Abdominal wall</li>
+              <li>Hernia repair</li>
+              <li>Rotator cuff &amp; ACL augmentation</li>
+              <li>Tendon &amp; ligament</li>
+              <li>Peripheral nerve</li>
+              <li>Vascular grafts</li>
+              <li>Cardiac patch</li>
+              <li>Veterinary</li>
+            </ul>
+          </div>
+        </div>
+
+        <ol class="path">
+          <li><strong>Soft tissue beachhead</strong><span>General and incisional reinforcement with familiar surgical workflows.</span></li>
+          <li><strong>Regulatory precedent</strong><span>A 510(k) pathway with known testing requirements.</span></li>
+          <li><strong>Clinical evidence</strong><span>Safety, handling and regeneration data, built with clinical leaders.</span></li>
+          <li><strong>Market expansion</strong><span>Apply the platform across pelvic floor, breast, abdominal wall and hernia.</span></li>
+        </ol>
       </div>
     </section>
 
     <!-- AUDIENCES -->
-    <section class="section">
+    <section class="section section-alt">
       <div class="container grid-2">
         <div class="panel">
           <p class="eyebrow">For surgeons</p>
-          <h3>Partner with us on clinical development</h3>
-          <p>[What you're looking for from clinicians — advisors, feedback, future study sites.]</p>
-          <a href="#contact" class="link">Talk to our clinical team &rarr;</a>
+          <h3>Help shape the clinical program</h3>
+          <p>
+            We are working with urogynecologists and reconstructive surgeons to design our studies.
+            If you treat patients these devices are failing, we'd value your perspective.
+          </p>
+          <a href="#contact" class="link">Talk to our team &rarr;</a>
         </div>
         <div class="panel">
           <p class="eyebrow">For investors</p>
-          <h3>[Funding stage, e.g. "Raising our pre-seed round"]</h3>
-          <p>[One or two lines on milestones — e.g. regulatory pathway, prototype status.]</p>
+          <h3>Raising our pre-seed round</h3>
+          <p>
+            Patent-pending nanofiber technology developed at Dartmouth, a defined path to a
+            first 510(k), and a platform built for follow-on indications.
+          </p>
           <a href="#contact" class="link">Request our deck &rarr;</a>
         </div>
       </div>
     </section>
 
     <!-- TEAM -->
-    <section id="team" class="section section-alt">
+    <section id="team" class="section">
       <div class="container">
         <p class="eyebrow">Team</p>
         <h2>The people behind Tensara</h2>
-        <div class="grid-3">
-          <div class="person">
-            <div class="avatar" aria-hidden="true">AH</div>
-            <h3>Alan Harding</h3>
-            <p class="role">[Title]</p>
-            <p>[Short bio.]</p>
+
+        <div class="grid-2 founders">
+          <article class="person">
+            <div class="avatar" aria-hidden="true">BT</div>
+            <div>
+              <h3>Becca Thomson, PhD</h3>
+              <p class="role">Co-Founder &amp; CEO</p>
+              <p>PhD in Biomedical Engineering and Surgical Innovation Program Fellow. Principal Investigator on Tensara's STTR Phase I award.</p>
+            </div>
+          </article>
+          <article class="person">
+            <div class="avatar" aria-hidden="true">KI</div>
+            <div>
+              <h3>Kevin Isett, PhD</h3>
+              <p class="role">Co-Founder &amp; Board Director</p>
+              <p>Venture Partner at Borealis Ventures. Previously co-founder and CEO of Avitide (acquired by Repligen), Head of Manufacturing at Adimab, and Senior Engineer at Merck Research Labs.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="advisors">
+          <div>
+            <h3>Clinical, regulatory &amp; product advisors</h3>
+            <ul>
+              <li><strong>Kris Strohbehn, MD, FACS, FACOG</strong> Urogynecologic surgeon; Vice Chair of Gynecology, Dartmouth Health</li>
+              <li><strong>Jonathan Shaw, MD</strong> Urogynecologic surgeon, Erlanger Women's Health</li>
+              <li><strong>Paul Hanissian, MD</strong> Clinical urogynecologist; CMO &amp; Co-Founder, Reia</li>
+              <li><strong>Aaron Kaplan, MD</strong> Clinical cardiologist; Co-Founder, Conformal Medical</li>
+              <li><strong>Richard McFarland, MD, PhD</strong> Chief Regulatory Officer, Advanced Regenerative Manufacturing Institute</li>
+              <li><strong>Rick Greenwald, PhD</strong> CEO, Bionic Skins; Co-Founder, Simbex</li>
+            </ul>
           </div>
-          <div class="person">
-            <div class="avatar" aria-hidden="true">?</div>
-            <h3>[Name]</h3>
-            <p class="role">[Title]</p>
-            <p>[Short bio.]</p>
-          </div>
-          <div class="person">
-            <div class="avatar" aria-hidden="true">?</div>
-            <h3>[Name]</h3>
-            <p class="role">[Title]</p>
-            <p>[Short bio.]</p>
+          <div>
+            <h3>Scientific &amp; business advisors</h3>
+            <ul>
+              <li><strong>Katherine Hixon, PhD</strong> Professor of Tissue Engineering</li>
+              <li><strong>Douglas Van Citters, PhD</strong> Professor of Biomaterials; Dean of Engineering</li>
+              <li><strong>Charles Wira, PhD</strong> Professor of Microbiology &amp; Immunology</li>
+              <li><strong>Ryan Halter, PhD</strong> Professor of Biomedical Engineering; serial entrepreneur</li>
+              <li><strong>Jake Reder, PhD</strong> President &amp; CEO, Celdara Medical</li>
+              <li><strong>Michael Orrico, MBA</strong> Director, ARMI BioFab Startup Lab</li>
+              <li><strong>Sherri Oberg, MBA</strong> CEO &amp; Co-Founder, Particles for Humanity</li>
+              <li><strong>Greg Lange</strong> President &amp; CEO, Simbex</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -141,17 +295,20 @@
     <section id="contact" class="section contact">
       <div class="container">
         <h2>Get in touch</h2>
-        <p class="lead">Surgeons, investors and partners — we'd love to hear from you.</p>
-        <a href="mailto:[contact@yourdomain.com]" class="btn">[contact@yourdomain.com]</a>
+        <p class="lead">Surgeons, investors and partners: we'd love to hear from you.</p>
+        <a href="mailto:[contact@yourdomain.com]" class="btn btn-light">[contact@yourdomain.com]</a>
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Tensara Medical, LLC. All rights reserved.</p>
-      <p class="small">Investigational device. Not available for sale in the United States.</p>
+    <div class="container footer-grid">
+      <p>&copy; <span id="year">2026</span> Tensara Medical, LLC</p>
+      <p class="small">
+        Investigational technology in development. Not cleared or approved by the U.S. FDA and
+        not available for sale. Statements describe design goals, not demonstrated clinical outcomes.
+      </p>
     </div>
   </footer>
 
