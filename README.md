@@ -14,7 +14,6 @@ One-page site for Tensara Medical. Plain HTML/CSS — no build step.
 
 ## Before going live
 - Add citations for the three statistics in the Problem section
-- Replace the contact email placeholder
 - Confirm advisors are happy to be listed publicly
 - Confirm rights to the micrograph/histology images
 - Have the claims and disclaimer reviewed by regulatory counsel
