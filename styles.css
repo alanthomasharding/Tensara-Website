@@ -226,12 +226,11 @@ nav a:not(.btn):hover { color: var(--steel); }
   text-transform: none; letter-spacing: 0; font-size: .75rem;
   background: var(--navy); color: var(--white); padding: .1rem .55rem; border-radius: 999px;
 }
+.stage-date { font-family: var(--font-head); font-weight: 700; color: var(--navy); font-size: 1rem; margin-bottom: .2rem; }
 .stage h4 { font-family: var(--font-head); color: var(--navy); font-size: 1.15rem; margin-bottom: .6rem; }
 .stage ul { list-style: none; margin-bottom: .9rem; }
 .stage ul li { position: relative; padding-left: 1rem; color: var(--slate); font-size: .93rem; margin-bottom: .4rem; }
 .stage ul li::before { content: ""; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--steel); }
-.unlocks { margin-top: auto; min-height: 3.7rem; font-size: .9rem; color: var(--ink); padding-top: .75rem; border-top: 1px solid var(--line); }
-.unlocks strong { color: var(--navy); }
 
 /* Team */
 .founders { margin-top: 2.5rem; margin-bottom: 3.5rem; row-gap: 2.5rem; }
