@@ -187,14 +187,51 @@ nav a:not(.btn):hover { color: var(--steel); }
   font-size: .9rem; padding: .4rem .85rem;
   border: 1px solid var(--line); border-radius: 999px; color: var(--ink);
 }
-.path { list-style: none; counter-reset: path; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-.path li { counter-increment: path; display: flex; flex-direction: column; gap: .35rem; }
-.path li::before {
-  content: counter(path, decimal-leading-zero);
-  font-family: var(--font-head); font-weight: 700; font-size: .9rem; color: var(--orange);
+/* Strategy */
+.strategy {
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 3rem;
+  margin-top: 4.5rem; padding-top: 3.5rem; border-top: 1px solid var(--line);
 }
-.path strong { font-family: var(--font-head); color: var(--navy); }
-.path span { color: var(--slate); font-size: .95rem; }
+.strategy-head h3 { font-size: clamp(1.4rem, 2.6vw, 1.85rem); margin-bottom: 1rem; }
+.strategy-head p:last-child { color: var(--slate); }
+.principles { list-style: none; display: grid; gap: 1rem; }
+.principles li {
+  display: grid; gap: .3rem;
+  padding: 1.25rem 1.5rem; border: 1px solid var(--line); border-radius: var(--radius);
+}
+.principles strong { font-family: var(--font-head); color: var(--navy); font-size: 1.05rem; }
+.principles span { color: var(--slate); font-size: .95rem; }
+
+/* Roadmap */
+.roadmap { margin-top: 4rem; }
+.roadmap-title { font-size: 1.35rem; margin-bottom: 1.75rem; }
+.stages { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; position: relative; }
+.stages::before {
+  content: ""; position: absolute; left: 9px; right: 0; top: 9px;
+  height: 2px; background: var(--line);
+}
+.stage { position: relative; padding-top: 2.25rem; display: flex; flex-direction: column; }
+.stage-marker {
+  position: absolute; top: 0; left: 0;
+  width: 20px; height: 20px; border-radius: 50%;
+  background: var(--white); border: 2px solid var(--steel);
+}
+.stage.is-current .stage-marker { background: var(--orange); border-color: var(--orange); box-shadow: 0 0 0 5px rgba(242, 125, 34, .18); }
+.stage-label {
+  font-family: var(--font-head); font-size: .8rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .12em; color: var(--steel);
+  margin-bottom: .35rem; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap;
+}
+.now {
+  text-transform: none; letter-spacing: 0; font-size: .75rem;
+  background: var(--navy); color: var(--white); padding: .1rem .55rem; border-radius: 999px;
+}
+.stage h4 { font-family: var(--font-head); color: var(--navy); font-size: 1.15rem; margin-bottom: .6rem; }
+.stage ul { list-style: none; margin-bottom: .9rem; }
+.stage ul li { position: relative; padding-left: 1rem; color: var(--slate); font-size: .93rem; margin-bottom: .4rem; }
+.stage ul li::before { content: ""; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--steel); }
+.unlocks { margin-top: auto; min-height: 3.7rem; font-size: .9rem; color: var(--ink); padding-top: .75rem; border-top: 1px solid var(--line); }
+.unlocks strong { color: var(--navy); }
 
 /* Team */
 .founders { margin-top: 2.5rem; margin-bottom: 3.5rem; row-gap: 2.5rem; }
@@ -244,7 +281,9 @@ nav a:not(.btn):hover { color: var(--steel); }
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
   .hero-figure { max-width: 440px; }
-  .path { grid-template-columns: repeat(2, 1fr); }
+  .stages { grid-template-columns: repeat(2, 1fr); row-gap: 2.5rem; }
+  .stages::before { display: none; }
+  .strategy { grid-template-columns: 1fr; gap: 2rem; }
 }
 
 @media (max-width: 760px) {
@@ -257,7 +296,10 @@ nav a:not(.btn):hover { color: var(--steel); }
   .nav::after { content: ""; order: 1; flex-basis: 100%; }
   nav a:not(.btn) { order: 2; font-size: .9rem; padding: .7rem 0; }
   .grid-2, .grid-3, .steps, .stats, .advisor-groups, .footer-grid { grid-template-columns: 1fr; }
-  .path { grid-template-columns: 1fr; }
+  .stages { grid-template-columns: 1fr; row-gap: 2rem; padding-left: 2rem; }
+  .stages::before { display: block; left: 9px; right: auto; top: 10px; bottom: 10px; width: 2px; height: auto; }
+  .stage { padding-top: 0; }
+  .stage-marker { left: -2rem; }
   .hero { padding: 3rem 0 4rem; }
   .section { padding: 4.5rem 0; }
   .site-footer .small { text-align: left; }
