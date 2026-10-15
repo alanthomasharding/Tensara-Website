@@ -169,19 +169,6 @@ nav a:not(.btn):hover { color: var(--steel); }
   border-radius: 50%; background: #eef1f5; color: var(--slate);
 }
 
-/* Problem: stats */
-.stats-panel { margin-top: 2.5rem; background: var(--navy); border-radius: var(--radius); padding: 2.25rem 2.5rem; }
-.stats-title {
-  font-family: var(--font-head); font-size: .8rem; font-weight: 600; text-transform: uppercase;
-  letter-spacing: .12em; color: #b9c9db; margin-bottom: 1.5rem;
-}
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); }
-.stat { padding: 0 2rem; border-left: 1px solid rgba(255, 255, 255, .15); }
-.stat:first-child { padding-left: 0; border-left: 0; }
-.stat-num { display: block; font-family: var(--font-head); font-size: clamp(2rem, 4vw, 2.6rem); font-weight: 700; color: var(--white); line-height: 1.1; margin-bottom: .5rem; }
-.stat-label { color: #d5dfea; font-size: .95rem; }
-.stats-source { margin-top: 1.75rem; font-size: .8rem; color: #9fb2c8; }
-
 /* Technology */
 .steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .step { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; position: relative; }
@@ -333,11 +320,8 @@ nav a:not(.btn):hover { color: var(--steel); }
   nav .btn { order: 1; }
   .nav::after { content: ""; order: 1; flex-basis: 100%; }
   nav a:not(.btn) { order: 2; font-size: .9rem; padding: .7rem 0; }
-  .grid-2, .grid-3, .steps, .stats, .options, .compare, .advisor-groups, .footer-grid { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .steps, .options, .compare, .advisor-groups, .footer-grid { grid-template-columns: 1fr; }
   .compare { padding: 1.75rem; gap: 2rem; }
-  .stats-panel { padding: 1.75rem; }
-  .stat { padding: 1.25rem 0; border-left: 0; border-top: 1px solid rgba(255, 255, 255, .15); }
-  .stat:first-child { padding-top: 0; border-top: 0; }
   .stages { grid-template-columns: 1fr; row-gap: 2rem; padding-left: 2rem; }
   .stages::before { display: block; left: 9px; right: auto; top: 10px; bottom: 10px; width: 2px; height: auto; }
   .stage { padding-top: 0; }

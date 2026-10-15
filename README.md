@@ -15,7 +15,6 @@ One-page site for Tensara Medical. Plain HTML/CSS — no build step.
 **Publish:** on GitHub, go to Settings → Pages, set Source to "Deploy from a branch", pick `main` / root, and save.
 
 ## Before going live
-- Add citations for the three statistics in the Problem section
 - Confirm advisors are happy to be listed publicly
 - Confirm rights to the micrograph/histology images
 - Have the claims and disclaimer reviewed by regulatory counsel
