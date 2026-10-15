@@ -8,6 +8,8 @@ One-page site for Tensara Medical. Plain HTML/CSS — no build step.
 - `BRAND.md` — positioning, voice and visual identity
 - `.claude/skills/ui-ux-pro-max/` — design skill used for the layout and accessibility checklist
 
+**After editing `styles.css`:** bump the `?v=` date on the stylesheet link in `index.html`, so browsers fetch the new styles instead of a cached copy.
+
 **Preview locally:** double-click `index.html` to open it in your browser.
 
 **Publish:** on GitHub, go to Settings → Pages, set Source to "Deploy from a branch", pick `main` / root, and save.
